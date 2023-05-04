@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Santo's Auto Custom Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+     <h1 id="title">Santo's Auto Customs Survey Form</h1>
+     <p id="description">Thank you for taking the time to help us, help you</p>
+     <form id="survey-form">
+       <fieldset>
+         <label for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your name" class="inline" required ></label>
+         <label for="email-lable">Email: <input id="email" name="email-lable" type="email" placeholder="Enter your Email" class="inline" required ></label>
+         <label for="age">Age: <input id="number" name="age" type="number" min="18" max="100" required placeholder="Age" class="inline" ></label>
+         <label for="department">Which vehicle department do you prefer? </lable>
+         <label id="name-label" ></lable>
+         <label id="email-label"></lable>
+         <label id="number-label"></lable>
+          <select id="dropdown" name="dropdown">
+            <option value="1">Services & Parts</option>
+            <option value="2">Infotainment & Sound Systems</option>
+            <option value="3">Customizations</option>
+          </select>
+       </fieldset>
+       <fieldset>
+         <label for="services">Would you prefer us doing the installations on your vehicle?
+         <label for="yes"><input id="yes" name="yes" value="yes" type="radio" class="inline" /> Yes</lable>
+         <label for="no"><input id="no" name="no" value="no" type="radio" class="inline" /> No</label>
+         <label for="services">Would you like a company like ours in your town?
+         <label for="yes"><input id="yes" name="yes" value="yes" type="radio" class="inline" /> Yes</lable>
+         <label for="no"><input id="no" name="no" value="no" type="radio" class="inline" /> No</label>
+       </fieldset>
+       <fieldset>
+          <label for="servies">From what you have selected, If the services were available today, how likely would you buy these services?</label>
+          <label for="servies"><input id="services" type="checkbox" value="extremely likely"/>Extremely likely</label>
+          <label for="servies"><input id="services" type="checkbox" value=" very likely"/>Very likely</label>
+          <label for="servies"><input id="services" type="checkbox" value=" somewhat likely"/>Somewhat likely</label>
+          <label for="servies"><input id="services" type="checkbox" value=" not so likely"/>Not so likely</label>
+          <label for="servies"><input id="services" type="checkbox" value="not at all likely"/>Not at likely</label>
+       </fieldset>
+       <fieldset>
+         <label for="comments">Any comments or suggestions?
+            <textarea id="comments" name="comments" rows="4" cols="70" placeholder="Enter your comments and suggestions here..."></textarea>
+          <input id="submit" type="submit" value="Submit" />
+          </fieldset>
+      </form>
+    </body>
+</html>
